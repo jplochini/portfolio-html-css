@@ -1,0 +1,50 @@
+header{
+    display: flex; /* Pesquisar sobre */
+    justify-content: space-between; /* Pesquisar sobre */
+    background-color: #FF8CA0;
+    border-bottom: 10px solid #000;
+    padding: 10px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    display: inline-flex; /* Pesquisar pra que serve */
+    align-items: center; /* Pesquisar - Para alinhar os itens com o quadrado */
+    color: #000;
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-weight: 500; /* Peso da fonte */ 
+    text-decoration: none; /* Decoração da fonte */ 
+    margin-right: 30px; /* Espaçamento entre os links */
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+a::before { /* PseudoElemento a::before */
+    content: " ";
+    background-color: #91DEFF;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #91DEFF;
+    box-shadow: 5px 5px 0 #000;
+    padding: 18px 20px;
+    margin-right: 0;
+    transition: transform 100ms linear; /* "transition é usado para criar uma animação de crescimento no botão
+                                         e funciona com qualquer propriedade */
+}
+
+#button:hover {
+    background-color: #A179E8;
+    transform: scale(1.05); /* Aumenta o tamanho do elemento */
+}

@@ -1,0 +1,5 @@
+/*Tirar o comportamento padrão do browser*/
+body, h1 {
+    margin: 0;
+}
+
